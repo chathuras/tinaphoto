@@ -12,13 +12,13 @@
 
 .services-header h1 {
     font-size: 2.5rem;
-    color: #333;
+    color: #ffffff;
     margin-bottom: 1rem;
 }
 
 .services-header p {
     font-size: 1.1rem;
-    color: #666;
+    color: #cccccc;
 }
 
 .services-container {
@@ -32,10 +32,10 @@
     display: grid;
     grid-template-columns: 1fr 2fr;
     gap: 2rem;
-    background: white;
+    background: #1a1a1a;
     border-radius: 12px;
     overflow: hidden;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 10px 30px rgba(255, 255, 255, 0.1);
     transition: transform 0.3s ease;
 }
 
@@ -71,12 +71,12 @@
 
 .service-header h2 {
     font-size: 1.8rem;
-    color: #333;
+    color: #ffffff;
     margin: 0;
 }
 
 .service-description {
-    color: #666;
+    color: #cccccc;
     line-height: 1.6;
     margin-bottom: 1.5rem;
 }
@@ -88,7 +88,7 @@
 }
 
 .detail-item {
-    color: #333;
+    color: #ffffff;
 }
 
 .detail-item strong {
@@ -96,7 +96,7 @@
 }
 
 .service-features h3 {
-    color: #333;
+    color: #ffffff;
     margin-bottom: 1rem;
 }
 
@@ -107,7 +107,7 @@
 
 .service-features li {
     padding: 0.5rem 0;
-    color: #666;
+    color: #cccccc;
     position: relative;
     padding-left: 1.5rem;
 }
@@ -141,7 +141,7 @@
 
 .pricing-cta {
     text-align: center;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
     color: white;
     padding: 3rem 2rem;
     border-radius: 12px;
@@ -178,13 +178,13 @@
 }
 
 .primary-btn {
-    background: white;
-    color: #667eea;
+    background: #667eea;
+    color: white;
 }
 
 .primary-btn:hover {
     transform: translateY(-2px);
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 10px 25px rgba(102, 126, 234, 0.3);
 }
 
 .secondary-btn {
@@ -194,8 +194,8 @@
 }
 
 .secondary-btn:hover {
-    background: white;
-    color: #667eea;
+    background: #667eea;
+    color: white;
     transform: translateY(-2px);
 }
 

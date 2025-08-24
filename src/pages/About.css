@@ -5,11 +5,11 @@
 }
 
 .about-hero {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    color: white;
-    text-align: center;
-    padding: 4rem 2rem;
-    margin-bottom: 4rem;
+  background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+  color: white;
+  text-align: center;
+  padding: 4rem 2rem;
+  margin-bottom: 4rem;
 }
 
 .about-hero-content h1 {
@@ -35,24 +35,24 @@
 }
 
 .story-text h2 {
-    font-size: 2.5rem;
-    color: #333;
-    margin-bottom: 1.5rem;
+  font-size: 2.5rem;
+  color: #ffffff;
+  margin-bottom: 1.5rem;
 }
 
 .story-text p {
-    font-size: 1.1rem;
-    line-height: 1.6;
-    color: #666;
-    margin-bottom: 1.5rem;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #cccccc;
+  margin-bottom: 1.5rem;
 }
 
 .story-image img {
-    width: 100%;
-    height: 500px;
-    object-fit: cover;
-    border-radius: 12px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(255, 255, 255, 0.1);
 }
 
 .about-stats {
@@ -63,12 +63,12 @@
 }
 
 .stat-card {
-    background: white;
-    padding: 2rem;
-    text-align: center;
-    border-radius: 12px;
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
+  background: #1a1a1a;
+  padding: 2rem;
+  text-align: center;
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgba(255, 255, 255, 0.1);
+  transition: transform 0.3s ease;
 }
 
 .stat-card:hover {
@@ -83,9 +83,9 @@
 }
 
 .stat-label {
-    color: #666;
-    font-size: 1rem;
-    margin-top: 0.5rem;
+  color: #cccccc;
+  font-size: 1rem;
+  margin-top: 0.5rem;
 }
 
 .about-philosophy {
@@ -93,10 +93,10 @@
 }
 
 .about-philosophy h2 {
-    text-align: center;
-    font-size: 2.5rem;
-    color: #333;
-    margin-bottom: 3rem;
+  text-align: center;
+  font-size: 2.5rem;
+  color: #ffffff;
+  margin-bottom: 3rem;
 }
 
 .philosophy-grid {
@@ -106,12 +106,12 @@
 }
 
 .philosophy-item {
-    background: white;
-    padding: 2rem;
-    border-radius: 12px;
-    text-align: center;
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
+  background: #1a1a1a;
+  padding: 2rem;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 5px 20px rgba(255, 255, 255, 0.1);
+  transition: transform 0.3s ease;
 }
 
 .philosophy-item:hover {
@@ -124,13 +124,13 @@
 }
 
 .philosophy-item h3 {
-    color: #333;
-    margin-bottom: 1rem;
+  color: #ffffff;
+  margin-bottom: 1rem;
 }
 
 .philosophy-item p {
-    color: #666;
-    line-height: 1.6;
+  color: #cccccc;
+  line-height: 1.6;
 }
 
 .about-equipment {
@@ -138,10 +138,10 @@
 }
 
 .about-equipment h2 {
-    text-align: center;
-    font-size: 2.5rem;
-    color: #333;
-    margin-bottom: 3rem;
+  text-align: center;
+  font-size: 2.5rem;
+  color: #ffffff;
+  margin-bottom: 3rem;
 }
 
 .equipment-content {
@@ -152,15 +152,15 @@
 }
 
 .equipment-text p {
-    font-size: 1.1rem;
-    line-height: 1.6;
-    color: #666;
-    margin-bottom: 1.5rem;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #cccccc;
+  margin-bottom: 1.5rem;
 }
 
 .equipment-list h3 {
-    color: #333;
-    margin-bottom: 1rem;
+  color: #ffffff;
+  margin-bottom: 1rem;
 }
 
 .equipment-list ul {
@@ -169,10 +169,10 @@
 }
 
 .equipment-list li {
-    padding: 0.5rem 0;
-    color: #666;
-    position: relative;
-    padding-left: 1.5rem;
+  padding: 0.5rem 0;
+  color: #cccccc;
+  position: relative;
+  padding-left: 1.5rem;
 }
 
 .equipment-list li::before {
@@ -186,10 +186,10 @@
 }
 
 .about-testimonials h2 {
-    text-align: center;
-    font-size: 2.5rem;
-    color: #333;
-    margin-bottom: 3rem;
+  text-align: center;
+  font-size: 2.5rem;
+  color: #ffffff;
+  margin-bottom: 3rem;
 }
 
 .testimonials-grid {
@@ -199,17 +199,17 @@
 }
 
 .testimonial {
-    background: #f8f9fa;
-    padding: 2rem;
-    border-radius: 12px;
-    text-align: center;
+  background: #1a1a1a;
+  padding: 2rem;
+  border-radius: 12px;
+  text-align: center;
 }
 
 .testimonial p {
-    font-style: italic;
-    color: #666;
-    line-height: 1.6;
-    margin-bottom: 1.5rem;
+  font-style: italic;
+  color: #cccccc;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
 }
 
 .testimonial-author {
@@ -218,12 +218,12 @@
 }
 
 .about-cta {
-    text-align: center;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    color: white;
-    padding: 3rem 2rem;
-    border-radius: 12px;
-    margin-bottom: 4rem;
+  text-align: center;
+  background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+  color: white;
+  padding: 3rem 2rem;
+  border-radius: 12px;
+  margin-bottom: 4rem;
 }
 
 .about-cta h2 {
@@ -238,8 +238,8 @@
 }
 
 .cta-button {
-  background: white;
-  color: #667eea;
+  background: #667eea;
+  color: white;
   border: none;
   padding: 1rem 2rem;
   font-size: 1.1rem;
@@ -252,8 +252,8 @@
 }
 
 .cta-button:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(102, 126, 234, 0.3);
 }
 
 /* Responsive Design */

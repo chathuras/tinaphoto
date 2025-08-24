@@ -2,17 +2,18 @@
   /* max-width: 1280px; */
   margin: 80px auto;
   /* padding: 2rem; */
-
   text-align: center;
 }
 
 .App {
   min-height: 100vh;
-  /* background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); */
+  background: #0a0a0a;
+  color: #ffffff;
 }
 
 .main-content {
-  padding-top: 80px; /* Account for fixed header */
+  padding-top: 80px;
+  /* Account for fixed header */
   min-height: calc(100vh - 80px);
 }
 
@@ -22,9 +23,11 @@
   will-change: filter;
   transition: filter 300ms;
 }
+
 .logo:hover {
   filter: drop-shadow(0 0 2em #646cffaa);
 }
+
 .logo.react:hover {
   filter: drop-shadow(0 0 2em #61dafbaa);
 }
@@ -33,6 +36,7 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
@@ -63,14 +67,14 @@
 .photo-carousel h2 {
   text-align: center;
   margin-bottom: 2rem;
-  color: #333;
+  color: #ffffff;
   font-size: 2rem;
 }
 
 .mySwiper {
   border-radius: 12px;
   overflow: hidden;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 10px 30px rgba(255, 255, 255, 0.1);
 }
 
 .slide-content {
@@ -107,8 +111,8 @@
 /* Swiper Navigation Buttons */
 .swiper-button-next,
 .swiper-button-prev {
-  color: white !important;
-  background: rgba(0, 0, 0, 0.5);
+  color: #ffffff !important;
+  background: rgba(255, 255, 255, 0.1);
   width: 50px !important;
   height: 50px !important;
   border-radius: 50%;
@@ -117,7 +121,7 @@
 
 .swiper-button-next:hover,
 .swiper-button-prev:hover {
-  background: rgba(0, 0, 0, 0.8);
+  background: rgba(255, 255, 255, 0.2);
 }
 
 .swiper-button-next::after,
@@ -127,11 +131,11 @@
 
 /* Swiper Pagination */
 .swiper-pagination-bullet {
-  background: white !important;
+  background: #ffffff !important;
   opacity: 0.7;
 }
 
 .swiper-pagination-bullet-active {
   opacity: 1;
-  background: #646cff !important;
+  background: #667eea !important;
 }
