@@ -1,0 +1,289 @@
+/* About Page Styles */
+.about-page {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.about-hero {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    text-align: center;
+    padding: 4rem 2rem;
+    margin-bottom: 4rem;
+}
+
+.about-hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.about-hero-content p {
+    font-size: 1.2rem;
+    opacity: 0.9;
+}
+
+.about-content {
+    padding: 0 2rem;
+}
+
+.about-story {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+    margin-bottom: 4rem;
+}
+
+.story-text h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 1.5rem;
+}
+
+.story-text p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #666;
+    margin-bottom: 1.5rem;
+}
+
+.story-image img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.about-stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+    margin-bottom: 4rem;
+}
+
+.stat-card {
+    background: white;
+    padding: 2rem;
+    text-align: center;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.stat-card:hover {
+    transform: translateY(-5px);
+}
+
+.stat-number {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #667eea;
+    display: block;
+}
+
+.stat-label {
+    color: #666;
+    font-size: 1rem;
+    margin-top: 0.5rem;
+}
+
+.about-philosophy {
+    margin-bottom: 4rem;
+}
+
+.about-philosophy h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 3rem;
+}
+
+.philosophy-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.philosophy-item {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.philosophy-item:hover {
+    transform: translateY(-5px);
+}
+
+.philosophy-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.philosophy-item h3 {
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.philosophy-item p {
+    color: #666;
+    line-height: 1.6;
+}
+
+.about-equipment {
+    margin-bottom: 4rem;
+}
+
+.about-equipment h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 3rem;
+}
+
+.equipment-content {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 3rem;
+    align-items: start;
+}
+
+.equipment-text p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #666;
+    margin-bottom: 1.5rem;
+}
+
+.equipment-list h3 {
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.equipment-list ul {
+    list-style: none;
+    padding: 0;
+}
+
+.equipment-list li {
+    padding: 0.5rem 0;
+    color: #666;
+    position: relative;
+    padding-left: 1.5rem;
+}
+
+.equipment-list li::before {
+    content: '📷';
+    position: absolute;
+    left: 0;
+}
+
+.about-testimonials {
+    margin-bottom: 4rem;
+}
+
+.about-testimonials h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 3rem;
+}
+
+.testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.testimonial {
+    background: #f8f9fa;
+    padding: 2rem;
+    border-radius: 12px;
+    text-align: center;
+}
+
+.testimonial p {
+    font-style: italic;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+.testimonial-author {
+    color: #667eea;
+    font-weight: 600;
+}
+
+.about-cta {
+    text-align: center;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 3rem 2rem;
+    border-radius: 12px;
+    margin-bottom: 4rem;
+}
+
+.about-cta h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.about-cta p {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+    opacity: 0.9;
+}
+
+.cta-button {
+  background: white;
+  color: #667eea;
+  border: none;
+  padding: 1rem 2rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.cta-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .about-content {
+        padding: 0 1rem;
+    }
+
+    .about-story {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .story-image img {
+        height: 300px;
+    }
+
+    .equipment-content {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .about-hero-content h1 {
+        font-size: 2rem;
+    }
+
+    .story-text h2,
+    .about-philosophy h2,
+    .about-equipment h2,
+    .about-testimonials h2 {
+        font-size: 2rem;
+    }
+}
