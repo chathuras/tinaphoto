@@ -1,12 +1,15 @@
 // import { useState } from 'react'
 import './App.css'
+import Header from './components/Header'
 import PhotoCarousel from './components/PhotoCarousel'
 
 function App() {
   return (
     <div className="App">
-      <h1>TinaPhoto - Photo Gallery</h1>
-      <PhotoCarousel />
+      <Header />
+      {/* <main className="main-content"> */}
+        <PhotoCarousel />
+      {/* </main> */}
     </div>
   )
 }
