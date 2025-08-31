@@ -111,25 +111,46 @@ const HomePage: React.FC = () => {
                         <div className="testimonial-card">
                             <div className="stars">⭐⭐⭐⭐⭐</div>
                             <p>"Tina captured our wedding day perfectly! Every photo tells a story and brings back the emotions of that special day."</p>
-                            <div className="client-info">
-                                <strong>Sarah & Mike</strong>
-                                <span>Wedding Clients</span>
+                            <div className="client-profile">
+                                <img 
+                                    src="https://images.unsplash.com/photo-1494790108755-2616b612b786?w=80&h=80&fit=crop&crop=face" 
+                                    alt="Sarah & Mike" 
+                                    className="client-avatar"
+                                />
+                                <div className="client-info">
+                                    <strong>Sarah & Mike</strong>
+                                    <span>Wedding Clients</span>
+                                </div>
                             </div>
                         </div>
                         <div className="testimonial-card">
                             <div className="stars">⭐⭐⭐⭐⭐</div>
                             <p>"Professional, creative, and incredibly talented. Our family portraits turned out better than we could have imagined."</p>
-                            <div className="client-info">
-                                <strong>The Johnson Family</strong>
-                                <span>Portrait Session</span>
+                            <div className="client-profile">
+                                <img 
+                                    src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=80&h=80&fit=crop&crop=face" 
+                                    alt="The Johnson Family" 
+                                    className="client-avatar"
+                                />
+                                <div className="client-info">
+                                    <strong>The Johnson Family</strong>
+                                    <span>Portrait Session</span>
+                                </div>
                             </div>
                         </div>
                         <div className="testimonial-card">
                             <div className="stars">⭐⭐⭐⭐⭐</div>
                             <p>"Tina's landscape photography is absolutely stunning. We have her work displayed throughout our home and office."</p>
-                            <div className="client-info">
-                                <strong>David Chen</strong>
-                                <span>Art Collector</span>
+                            <div className="client-profile">
+                                <img 
+                                    src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=80&h=80&fit=crop&crop=face" 
+                                    alt="David Chen" 
+                                    className="client-avatar"
+                                />
+                                <div className="client-info">
+                                    <strong>David Chen</strong>
+                                    <span>Art Collector</span>
+                                </div>
                             </div>
                         </div>
                     </div>

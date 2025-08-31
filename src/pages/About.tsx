@@ -95,15 +95,36 @@ const About: React.FC = () => {
           <div className="testimonials-grid">
             <div className="testimonial">
               <p>"Tina has an incredible eye for capturing the perfect moment. Our wedding photos are absolutely stunning and bring back all the emotions of our special day."</p>
-              <div className="testimonial-author">- Sarah & Mike, Wedding Clients</div>
+              <div className="testimonial-profile">
+                <img 
+                  src="https://images.unsplash.com/photo-1494790108755-2616b612b786?w=80&h=80&fit=crop&crop=face" 
+                  alt="Sarah & Mike" 
+                  className="testimonial-avatar"
+                />
+                <div className="testimonial-author">- Sarah & Mike, Wedding Clients</div>
+              </div>
             </div>
             <div className="testimonial">
               <p>"Professional, creative, and incredibly talented. Our family portraits turned out better than we could have imagined. Highly recommend!"</p>
-              <div className="testimonial-author">- The Johnson Family</div>
+              <div className="testimonial-profile">
+                <img 
+                  src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=80&h=80&fit=crop&crop=face" 
+                  alt="The Johnson Family" 
+                  className="testimonial-avatar"
+                />
+                <div className="testimonial-author">- The Johnson Family</div>
+              </div>
             </div>
             <div className="testimonial">
               <p>"Tina's landscape photography is absolutely breathtaking. We have her work displayed throughout our home and receive compliments constantly."</p>
-              <div className="testimonial-author">- David Chen, Art Collector</div>
+              <div className="testimonial-profile">
+                <img 
+                  src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=80&h=80&fit=crop&crop=face" 
+                  alt="David Chen" 
+                  className="testimonial-avatar"
+                />
+                <div className="testimonial-author">- David Chen, Art Collector</div>
+              </div>
             </div>
           </div>
         </div>

@@ -4,6 +4,8 @@ import './Gallery.css';
 
 const Gallery: React.FC = () => {
   const [activeCategory, setActiveCategory] = useState('all');
+  const [selectedPhoto, setSelectedPhoto] = useState<typeof photos[0] | null>(null);
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
   const categories = [
     { id: 'all', name: 'All Photos' },
@@ -40,6 +42,41 @@ const Gallery: React.FC = () => {
     ? photos
     : photos.filter(photo => photo.category === activeCategory);
 
+  const openModal = (photo: typeof photos[0]) => {
+    setSelectedPhoto(photo);
+    setIsModalOpen(true);
+  };
+
+  const closeModal = () => {
+    setIsModalOpen(false);
+    setSelectedPhoto(null);
+  };
+
+  const navigatePhoto = (direction: 'prev' | 'next') => {
+    if (!selectedPhoto) return;
+    
+    const currentIndex = filteredPhotos.findIndex(photo => photo.id === selectedPhoto.id);
+    let newIndex: number;
+    
+    if (direction === 'prev') {
+      newIndex = currentIndex === 0 ? filteredPhotos.length - 1 : currentIndex - 1;
+    } else {
+      newIndex = currentIndex === filteredPhotos.length - 1 ? 0 : currentIndex + 1;
+    }
+    
+    setSelectedPhoto(filteredPhotos[newIndex]);
+  };
+
+  const handleKeyDown = (e: React.KeyboardEvent) => {
+    if (e.key === 'Escape') {
+      closeModal();
+    } else if (e.key === 'ArrowLeft') {
+      navigatePhoto('prev');
+    } else if (e.key === 'ArrowRight') {
+      navigatePhoto('next');
+    }
+  };
+
   return (
     <div className="gallery-page">
       <div className="gallery-header">
@@ -61,11 +98,19 @@ const Gallery: React.FC = () => {
 
       <div className="gallery-grid">
         {filteredPhotos.map(photo => (
-          <div key={photo.id} className="gallery-item">
+          <div 
+            key={photo.id} 
+            className="gallery-item"
+            onClick={() => openModal(photo)}
+            role="button"
+            tabIndex={0}
+            onKeyDown={(e) => e.key === 'Enter' && openModal(photo)}
+          >
             <img src={photo.src} alt={photo.alt} />
             <div className="gallery-overlay">
               <h3>{photo.title}</h3>
               <p>{photo.alt}</p>
+              <div className="click-hint">Click to preview</div>
             </div>
           </div>
         ))}
@@ -76,6 +121,53 @@ const Gallery: React.FC = () => {
         <p>Let's create beautiful memories together</p>
         <Link to="/contact" className="cta-button">Book Your Session</Link>
       </div>
+
+      {/* Photo Preview Modal */}
+      {isModalOpen && selectedPhoto && (
+        <div 
+          className="photo-modal-overlay"
+          onClick={closeModal}
+          onKeyDown={handleKeyDown}
+          tabIndex={-1}
+        >
+          <div className="photo-modal" onClick={(e) => e.stopPropagation()}>
+            <button className="modal-close" onClick={closeModal}>
+              ✕
+            </button>
+            
+            <div className="modal-image-container">
+              <img 
+                src={selectedPhoto.src.replace('w=400&h=300', 'w=800&h=600')} 
+                alt={selectedPhoto.alt} 
+                className="modal-image"
+              />
+            </div>
+            
+            <div className="modal-content">
+              <h2>{selectedPhoto.title}</h2>
+              <p>{selectedPhoto.alt}</p>
+              <div className="modal-category">
+                Category: <span>{categories.find(cat => cat.id === selectedPhoto.category)?.name}</span>
+              </div>
+            </div>
+            
+            <button 
+              className="modal-nav modal-nav-prev" 
+              onClick={() => navigatePhoto('prev')}
+              aria-label="Previous photo"
+            >
+              ‹
+            </button>
+            <button 
+              className="modal-nav modal-nav-next" 
+              onClick={() => navigatePhoto('next')}
+              aria-label="Next photo"
+            >
+              ›
+            </button>
+          </div>
+        </div>
+      )}
     </div>
   );
 };

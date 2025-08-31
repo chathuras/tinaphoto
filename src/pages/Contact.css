@@ -22,8 +22,8 @@
 }
 
 .contact-content {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    /* display: grid;
+    grid-template-columns: 1fr 1fr; */
     gap: 4rem;
     margin-bottom: 4rem;
 }
@@ -40,8 +40,8 @@
 }
 
 .info-item {
-    display: flex;
-    align-items: flex-start;
+    /* display: flex;
+    align-items: flex-start; */
     gap: 1rem;
     margin-bottom: 2rem;
 }

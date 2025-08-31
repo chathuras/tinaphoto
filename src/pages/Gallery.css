@@ -59,6 +59,7 @@
     overflow: hidden;
     box-shadow: 0 10px 30px rgba(255, 255, 255, 0.1);
     transition: transform 0.3s ease;
+    cursor: pointer;
 }
 
 .gallery-item:hover {
@@ -101,6 +102,13 @@
     margin: 0;
     opacity: 0.9;
     font-size: 0.9rem;
+}
+
+.click-hint {
+    font-size: 0.8rem;
+    opacity: 0.7;
+    margin-top: 0.5rem;
+    font-style: italic;
 }
 
 .gallery-cta {
@@ -162,5 +170,146 @@
 
     .gallery-header h1 {
         font-size: 2rem;
+    }
+}
+
+/* Photo Modal Styles */
+.photo-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    padding: 2rem;
+}
+
+.photo-modal {
+    position: relative;
+    background: #1a1a1a;
+    border-radius: 12px;
+    max-width: 90vw;
+    max-height: 90vh;
+    overflow: hidden;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+}
+
+.modal-close {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    border: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 1.2rem;
+    z-index: 10;
+    transition: background 0.3s ease;
+}
+
+.modal-close:hover {
+    background: rgba(255, 0, 0, 0.8);
+}
+
+.modal-image-container {
+    text-align: center;
+    background: #000;
+}
+
+.modal-image {
+    max-width: 100%;
+    max-height: 70vh;
+    object-fit: contain;
+}
+
+.modal-content {
+    padding: 2rem;
+    color: white;
+}
+
+.modal-content h2 {
+    margin: 0 0 1rem 0;
+    color: #ffffff;
+    font-size: 1.5rem;
+}
+
+.modal-content p {
+    margin: 0 0 1rem 0;
+    color: #cccccc;
+    line-height: 1.6;
+}
+
+.modal-category {
+    color: #667eea;
+    font-weight: 500;
+}
+
+.modal-category span {
+    color: #ffffff;
+    font-weight: 600;
+}
+
+.modal-nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    border: none;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 1.5rem;
+    transition: all 0.3s ease;
+    z-index: 10;
+}
+
+.modal-nav:hover {
+    background: rgba(102, 126, 234, 0.8);
+    transform: translateY(-50%) scale(1.1);
+}
+
+.modal-nav-prev {
+    left: 1rem;
+}
+
+.modal-nav-next {
+    right: 1rem;
+}
+
+/* Modal Responsive Design */
+@media (max-width: 768px) {
+    .photo-modal-overlay {
+        padding: 1rem;
+    }
+    
+    .modal-nav {
+        width: 40px;
+        height: 40px;
+        font-size: 1.2rem;
+    }
+    
+    .modal-nav-prev {
+        left: 0.5rem;
+    }
+    
+    .modal-nav-next {
+        right: 0.5rem;
+    }
+    
+    .modal-content {
+        padding: 1.5rem;
+    }
+    
+    .modal-content h2 {
+        font-size: 1.3rem;
     }
 }

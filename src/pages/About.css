@@ -212,6 +212,22 @@
   margin-bottom: 1.5rem;
 }
 
+.testimonial-profile {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.testimonial-avatar {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #667eea;
+  box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+}
+
 .testimonial-author {
     color: #667eea;
     font-weight: 600;

@@ -15,7 +15,7 @@ const Footer: React.FC = () => {
             <div className="social-links">
               <a href="#" className="social-link">📸 Instagram</a>
               <a href="#" className="social-link">📘 Facebook</a>
-              <a href="#" className="social-link">🐦 Twitter</a>
+              {/* <a href="#" className="social-link">🐦 Twitter</a> */}
             </div>
           </div>
           
@@ -42,9 +42,9 @@ const Footer: React.FC = () => {
           <div className="footer-section">
             <h4>Contact Info</h4>
             <div className="contact-info">
-              <p>📧 hello@tinaphotos.com</p>
-              <p>📞 (555) 123-4567</p>
-              <p>📍 San Francisco, CA</p>
+              <p>📧 hello@tinaphotosolutions.com</p>
+              <p>🟢📞 WhatsApp +81-90-1234-5678</p>
+              <p>📍 Tokyo, Japan</p>
             </div>
           </div>
         </div>
@@ -54,8 +54,8 @@ const Footer: React.FC = () => {
             <p>&copy; {currentYear} Tina Photo Solutions. All rights reserved.</p>
           </div>
           <div className="footer-bottom-links">
-            <a href="#privacy">Privacy Policy</a>
-            <a href="#terms">Terms of Service</a>
+            {/* <a href="#privacy">Privacy Policy</a> */}
+            {/* <a href="#terms">Terms of Service</a> */}
           </div>
         </div>
       </div>

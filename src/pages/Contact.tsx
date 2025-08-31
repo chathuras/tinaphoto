@@ -47,8 +47,8 @@ const Contact: React.FC = () => {
             <div className="info-icon">📞</div>
             <div className="info-content">
               <h3>Phone</h3>
-              <p>(555) 123-4567</p>
-              <p>Available Mon-Fri, 9AM-6PM</p>
+              <p>+81-90-1234-5678</p>
+              <p>Available 7AM–11PM, any day of the year</p>
             </div>
           </div>
           
@@ -56,22 +56,22 @@ const Contact: React.FC = () => {
             <div className="info-icon">📍</div>
             <div className="info-content">
               <h3>Location</h3>
-              <p>San Francisco, CA</p>
-              <p>Serving the Bay Area and beyond</p>
+              <p>Tokyo, Japan</p>
+              <p>Serving Tokyo and Greater Tokyo Area</p>
             </div>
           </div>
 
           <div className="social-links">
-            <h3>Follow Me</h3>
+            {/* <h3>Follow Me</h3> */}
             <div className="social-icons">
               <a href="#" className="social-link">📸 Instagram</a>
               <a href="#" className="social-link">📘 Facebook</a>
-              <a href="#" className="social-link">🐦 Twitter</a>
+              {/* <a href="#" className="social-link">🐦 Twitter</a> */}
             </div>
           </div>
         </div>
 
-        <div className="contact-form">
+        {/* <div className="contact-form">
           <h2>Send Me a Message</h2>
           <form onSubmit={handleSubmit}>
             <div className="form-group">
@@ -141,7 +141,7 @@ const Contact: React.FC = () => {
 
             <button type="submit" className="submit-btn">Send Message</button>
           </form>
-        </div>
+        </div> */}
       </div>
 
       <div className="faq-section">
