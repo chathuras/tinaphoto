@@ -1,28 +1,28 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './Contact.css';
 
 const Contact: React.FC = () => {
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    phone: '',
-    service: '',
-    message: ''
-  });
+  // const [formData, setFormData] = useState({
+  //   name: '',
+  //   email: '',
+  //   phone: '',
+  //   service: '',
+  //   message: ''
+  // });
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
-    setFormData({
-      ...formData,
-      [e.target.name]: e.target.value
-    });
-  };
+  // const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
+  //   setFormData({
+  //     ...formData,
+  //     [e.target.name]: e.target.value
+  //   });
+  // };
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    // Handle form submission here
-    console.log('Form submitted:', formData);
-    alert('Thank you for your message! I\'ll get back to you soon.');
-  };
+  // const handleSubmit = (e: React.FormEvent) => {
+  //   e.preventDefault();
+  //   // Handle form submission here
+  //   console.log('Form submitted:', formData);
+  //   alert('Thank you for your message! I\'ll get back to you soon.');
+  // };
 
   return (
     <div className="contact-page">
