@@ -119,7 +119,7 @@ const Gallery: React.FC = () => {
       <div className="gallery-cta">
         <h2>Interested in a Custom Photo Session?</h2>
         <p>Let's create beautiful memories together</p>
-        <Link to="/tinaphoto/contact" className="cta-button">Book Your Session</Link>
+        <Link to="/contact" className="cta-button">Book Your Session</Link>
       </div>
 
       {/* Photo Preview Modal */}
