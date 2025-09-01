@@ -132,7 +132,7 @@ const About: React.FC = () => {
         <div className="about-cta">
           <h2>Ready to Create Beautiful Memories Together?</h2>
           <p>Let's discuss your photography needs and create something truly special.</p>
-          <Link to="/contact" className="cta-button">Get in Touch</Link>
+          <Link to="/tinaphoto/contact" className="cta-button">Get in Touch</Link>
         </div>
       </div>
     </div>

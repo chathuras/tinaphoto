@@ -164,8 +164,8 @@ const HomePage: React.FC = () => {
                         <h2>Ready to Create Something Beautiful?</h2>
                         <p>Let's discuss your photography needs and create stunning images together.</p>
                         <div className="cta-buttons">
-                            <Link to="/contact" className="primary-button">Book a Session</Link>
-                            <Link to="/contact" className="secondary-button">Get in Touch</Link>
+                            <Link to="/tinaphoto/contact" className="primary-button">Book a Session</Link>
+                            <Link to="/tinaphoto/contact" className="secondary-button">Get in Touch</Link>
                         </div>
                     </div>
                 </div>

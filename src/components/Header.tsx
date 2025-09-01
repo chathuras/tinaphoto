@@ -24,19 +24,19 @@ const Header: React.FC = () => {
         <nav className={`nav-menu ${isMenuOpen ? 'active' : ''}`}>
           <ul className="nav-list">
             <li className="nav-item">
-              <Link to="/" className={`nav-link ${isActive('/') ? 'active' : ''}`}>Home</Link>
+              <Link to="/tinaphoto/" className={`nav-link ${isActive('/') ? 'active' : ''}`}>Home</Link>
             </li>
             <li className="nav-item">
-              <Link to="/gallery" className={`nav-link ${isActive('/gallery') ? 'active' : ''}`}>Gallery</Link>
+              <Link to="/tinaphoto/gallery" className={`nav-link ${isActive('/gallery') ? 'active' : ''}`}>Gallery</Link>
             </li>
             <li className="nav-item">
-              <Link to="/services" className={`nav-link ${isActive('/services') ? 'active' : ''}`}>Services</Link>
+              <Link to="/tinaphoto/services" className={`nav-link ${isActive('/services') ? 'active' : ''}`}>Services</Link>
             </li>
             <li className="nav-item">
-              <Link to="/about" className={`nav-link ${isActive('/about') ? 'active' : ''}`}>About</Link>
+              <Link to="/tinaphoto/about" className={`nav-link ${isActive('/about') ? 'active' : ''}`}>About</Link>
             </li>
             <li className="nav-item">
-              <Link to="/contact" className={`nav-link ${isActive('/contact') ? 'active' : ''}`}>Contact</Link>
+              <Link to="/tinaphoto/contact" className={`nav-link ${isActive('/contact') ? 'active' : ''}`}>Contact</Link>
             </li>
           </ul>
         </nav>

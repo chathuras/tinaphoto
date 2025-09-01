@@ -114,7 +114,7 @@ const Services: React.FC = () => {
                 </ul>
               </div>
 
-              <Link to="/contact" className="book-service-btn">Book This Service</Link>
+              <Link to="/tinaphoto/contact" className="book-service-btn">Book This Service</Link>
             </div>
           </div>
         ))}
@@ -124,8 +124,8 @@ const Services: React.FC = () => {
         <h2>Custom Packages Available</h2>
         <p>Need something specific? I offer custom packages tailored to your unique requirements.</p>
         <div className="cta-buttons">
-          <Link to="/contact" className="primary-btn">Get Custom Quote</Link>
-          <Link to="/services" className="secondary-btn">View Full Pricing</Link>
+          <Link to="/tinaphoto/contact" className="primary-btn">Get Custom Quote</Link>
+          <Link to="/tinaphoto/services" className="secondary-btn">View Full Pricing</Link>
         </div>
       </div>
     </div>

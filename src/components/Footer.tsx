@@ -22,20 +22,20 @@ const Footer: React.FC = () => {
           <div className="footer-section">
             <h4>Services</h4>
             <ul className="footer-links">
-              <li><Link to="/services">Portrait Photography</Link></li>
-              <li><Link to="/services">Wedding Photography</Link></li>
-              <li><Link to="/services">Landscape Photography</Link></li>
-              <li><Link to="/services">Event Photography</Link></li>
+              <li><Link to="/tinaphoto/services">Portrait Photography</Link></li>
+              <li><Link to="/tinaphoto/services">Wedding Photography</Link></li>
+              <li><Link to="/tinaphoto/services">Landscape Photography</Link></li>
+              <li><Link to="/tinaphoto/services">Event Photography</Link></li>
             </ul>
           </div>
           
           <div className="footer-section">
             <h4>Quick Links</h4>
             <ul className="footer-links">
-              <li><Link to="/about">About</Link></li>
-              <li><Link to="/gallery">Gallery</Link></li>
-              <li><Link to="/contact">Contact</Link></li>
-              <li><Link to="/services">Pricing</Link></li>
+              <li><Link to="/tinaphoto/about">About</Link></li>
+              <li><Link to="/tinaphoto/gallery">Gallery</Link></li>
+              <li><Link to="/tinaphoto/contact">Contact</Link></li>
+              <li><Link to="/tinaphoto/services">Pricing</Link></li>
             </ul>
           </div>
           
